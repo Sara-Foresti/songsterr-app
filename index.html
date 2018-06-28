@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Songsterr App</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <h1>Songsterr App</h1>
+    <h2>Find your favourite artist's songs</h2>
+
+    <form action="#" id="search-form">
+      <input type="text" placeholder="Try 'Jackson'" id="artist">
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="songs-header">
+      <!-- inject "artist's songs:" header here -->
+    </div>
+    <ul id="results">
+      <!-- inject songs here -->
+    </ul>
 
     <script src="dist/bundle.js"></script>
   </body>
