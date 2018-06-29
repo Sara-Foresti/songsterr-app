@@ -1,3 +1,36 @@
-h1 {
-  color: blue;
+body {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+.title {
+  font-weight: 700;
+}
+
+.title h1 {
+  color: #466191;
+}
+
+.title h2 {
+  color: #5b5b5b;
+}
+
+#search-form {
+  margin: 32px;
+}
+
+#songs-header {
+  font-size: 24px;
+  padding: 16px;
+  font-weight: 600;
+  color: #466191;
+}
+
+#results {
+  font-size: 16px;
+  color: #5b5b5b;
+}
+
+#results p {
+  font-size: 14px;
+  opacity: 0.8;
 }

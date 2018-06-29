@@ -3,24 +3,43 @@
   <head>
     <title>Songsterr App</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <h1>Songsterr App</h1>
-    <h2>Find your favourite artist's songs</h2>
-
-    <form action="#" id="search-form">
-      <input type="text" placeholder="Try 'Jackson'" id="artist">
-      <button type="submit">Search</button>
-    </form>
-
-    <div id="songs-header">
-      <!-- inject "artist's songs:" header here -->
+    <div class="title text-center">
+      <h1>Songsterr App</h1>
+      <h2>Find your favourite artist's songs</h2>
     </div>
-    <ul id="results">
-      <!-- inject songs here -->
-    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <form action="#" class="form-inline" id="search-form">
+            <div class="form-group">
+              <input type="text" placeholder="Try 'George Michael'" class="form-control" id="artist">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Search">
+          </form>
+        </div>
+
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <div id="songs-header">
+            <!-- inject "artist's songs:" header here -->
+          </div>
+          <ul id="results" class="list-unstyled">
+            <!-- inject songs here -->
+          </ul>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
 
     <script src="dist/bundle.js"></script>
   </body>
